@@ -17,6 +17,11 @@ const config: GatsbyConfig = {
     siteLanguage: `en`,
     author: `@lekoarts_de`,
   },
+  
+  
+  pathPrefix: "/github-pages-cicd-LucasPizzaia", 
+ 
+
   trailingSlash: `always`,
   plugins: [
     {
