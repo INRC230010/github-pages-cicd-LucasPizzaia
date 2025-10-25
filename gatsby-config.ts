@@ -19,7 +19,7 @@ const config: GatsbyConfig = {
   },
   
   
-  pathPrefix: "/github-pages-cicd-LucasPizzaia", 
+  pathPrefix: "/INRC230010/github-pages-cicd-LucasPizzaia", 
  
 
   trailingSlash: `always`,
