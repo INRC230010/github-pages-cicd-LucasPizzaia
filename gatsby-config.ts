@@ -15,7 +15,7 @@ const config: GatsbyConfig = {
     author: `@lucaspizzaia`,
   },
 
-  // ✅ pathPrefix CORRETO para GitHub Pages
+  
   pathPrefix: "/github-pages-cicd-LucasPizzaia",
 
   trailingSlash: `always`,
