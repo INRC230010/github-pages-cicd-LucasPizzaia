@@ -8,14 +8,14 @@ const config: GatsbyConfig = {
     siteTitle: `Emilia`,
     siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
     siteHeadline: `Emilia - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://inrc230010.github.io`, 
+    siteUrl: `https://inrc230010.github.io`,
     siteDescription: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
     author: `@lucaspizzaia`,
   },
 
-  
+  // ✅ pathPrefix CORRETO para GitHub Pages
   pathPrefix: "/github-pages-cicd-LucasPizzaia",
 
   trailingSlash: `always`,
@@ -65,7 +65,9 @@ const config: GatsbyConfig = {
         open: false,
       },
     },
+   
+    `gatsby-plugin-remove-serviceworker`, 
   ].filter(Boolean) as Array<PluginRef>,
 }
 
-module.exports = config 
+module.exports = config
