@@ -22,11 +22,10 @@ jobs:
         run: npm ci
 
       - name: Build do Gatsby
-        run: npx gatsby build --prefix-paths
+        run: npm run build
 
       - name: Deploy para GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public # Onde o Gatsby coloca o build
-          # O 'gh-pages' será criado e mantido por este step
