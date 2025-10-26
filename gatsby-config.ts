@@ -8,7 +8,7 @@ const config: GatsbyConfig = {
     siteTitle: `Emilia`,
     siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
     siteHeadline: `Emilia - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://inrc230010.github.io`,
+    siteUrl: `https://inrc230010.github.io/github-pages-cicd-LucasPizzaia`,
     siteDescription: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,

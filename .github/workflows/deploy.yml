@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Build do Gatsby
-        run: npx gatsby build --prefix-paths
+        run: npm run build
 
       - name: Deploy para GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -30,4 +30,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public # Onde o Gatsby coloca o build
           force_orphan: true
-          cname: 'inrc230010.github.io'
+          
