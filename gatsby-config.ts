@@ -5,28 +5,24 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    // You can overwrite values here that are used for the SEO component
-    // You can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-emilia-core/gatsby-config.mjs
     siteTitle: `Emilia`,
     siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
     siteHeadline: `Emilia - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://lucaspizzaia.github.io`,
+    siteUrl: `https://Lucaspizzaia.github.io`, // 
     siteDescription: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
-    author: `@lekoarts_de`,
+    author: `@lucaspizzaia`, 
   },
-  
-  
-  pathPrefix: "/github-pages-cicd-LucasPizzaia", 
+
  
+  pathPrefix: "/",
 
   trailingSlash: `always`,
+
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-emilia`,
-      // See the theme's README for all available options
       options: {},
     },
     {
@@ -41,11 +37,8 @@ const config: GatsbyConfig = {
         name: `Emilia - @lekoarts/gatsby-theme-emilia`,
         short_name: `Emilia`,
         description: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI.`,
-        start_url: `/`,
-        background_color: `#fff`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#3182ce`,
+        start_url: `/`, 
+        background_color: `#ffffff`,
         display: `standalone`,
         icons: [
           {
@@ -61,7 +54,9 @@ const config: GatsbyConfig = {
         ],
       },
     },
-    // You can remove this plugin if you don't need it
+    {
+      resolve: `gatsby-plugin-catch-links`, 
+    },
     shouldAnalyseBundle && {
       resolve: `gatsby-plugin-webpack-statoscope`,
       options: {

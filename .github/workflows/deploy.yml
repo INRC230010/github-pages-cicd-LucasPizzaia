@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Build do Gatsby
-        run: npx gatsby build --prefix-paths
+        run: npx gatsby build 
 
       - name: Deploy para GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
