@@ -8,15 +8,15 @@ const config: GatsbyConfig = {
     siteTitle: `Emilia`,
     siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
     siteHeadline: `Emilia - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://Lucaspizzaia.github.io`, // 
+    siteUrl: `https://inrc230010.github.io`, // ✅ seu domínio do GitHub Pages
     siteDescription: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
-    author: `@lucaspizzaia`, 
+    author: `@lucaspizzaia`,
   },
 
- 
-  pathPrefix: "/",
+  
+  pathPrefix: "/github-pages-cicd-LucasPizzaia",
 
   trailingSlash: `always`,
 
@@ -34,10 +34,10 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Emilia - @lekoarts/gatsby-theme-emilia`,
+        name: `Emilia - Portfolio`,
         short_name: `Emilia`,
-        description: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI.`,
-        start_url: `/`, 
+        description: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images.`,
+        start_url: `/github-pages-cicd-LucasPizzaia/`,
         background_color: `#ffffff`,
         display: `standalone`,
         icons: [
@@ -55,7 +55,7 @@ const config: GatsbyConfig = {
       },
     },
     {
-      resolve: `gatsby-plugin-catch-links`, 
+      resolve: `gatsby-plugin-catch-links`,
     },
     shouldAnalyseBundle && {
       resolve: `gatsby-plugin-webpack-statoscope`,
@@ -68,4 +68,4 @@ const config: GatsbyConfig = {
   ].filter(Boolean) as Array<PluginRef>,
 }
 
-export default config
+module.exports = config 
